@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Loader from '../../components/Loader'
 
 import { useState } from 'react'
-import toast from 'react-hot-toast'
+
 import PostFeed from '../../components/PostFeed'
 import { firestore, postToJSON, fromMillis } from '../../lib/firebase'
 
