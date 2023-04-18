@@ -1,6 +1,9 @@
 import PostContent from "../../../components/PostContent"
 import { firestore, getUserWithUsername, postToJSON } from "../../../lib/firebase"
 import { useDocumentData } from "react-firebase-hooks/firestore";
+import AuthCheck from "../../../components/AuthCheck";
+import HeartButton from "../../../components/HeartButton";
+import Link from "next/link";
 // import  styles from '../../styles'
 
 export async function getStaticProps({ params }){ //fetch data on the build time
@@ -67,6 +70,16 @@ export default function Post(props) {
         <p>
           <strong>{post.heartCount || 0} ❤️</strong>
         </p>
+
+        <AuthCheck
+          fallback={
+            <Link href="/enter">
+              <button>Sign Up</button>
+            </Link>
+          }
+        >
+          <HeartButton postRef={postRef}/>
+        </AuthCheck>
 
       </aside>
 
