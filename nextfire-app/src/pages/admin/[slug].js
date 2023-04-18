@@ -9,7 +9,7 @@ import { useDocumentDataOnce } from 'react-firebase-hooks/firestore';
 import { useForm } from 'react-hook-form';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
-import toast from 'react-hot-toast';
+
 import AuthCheck from "../../../components/AuthCheck";
 import { firestore } from "../../../lib/firebase";
 import { auth } from "../../../lib/firebase";

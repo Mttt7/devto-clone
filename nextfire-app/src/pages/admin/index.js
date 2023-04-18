@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import { useCollection } from 'react-firebase-hooks/firestore';
 import kebabCase from 'lodash.kebabcase';
-import toast from 'react-hot-toast';
+
 import PostFeed from "../../../components/PostFeed";
 import { UserContext } from "../../../lib/context";
 import { serverTimestamp } from "firebase/firestore";
