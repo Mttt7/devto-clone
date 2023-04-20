@@ -36,10 +36,10 @@ const firebaseConfig = {
   export const storage = firebase.storage()
   export const STATE_CHANGED = firebase.storage.TaskEvent.STATE_CHANGED;
 
-  //helper function
+  //---Helper functions---
 
   // gets a users/{uid} document with username
-  // @param {string} username
+
 
   export async function getUserWithUsername(username){
     const usersRef = firestore.collection('users')
@@ -49,7 +49,7 @@ const firebaseConfig = {
   }
 
   //converts a firestore document to JSON
-  // @param {DocumentSnapshot} doc
+ 
 
   export function postToJSON(doc){
     const data = doc.data()
