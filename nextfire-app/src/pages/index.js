@@ -11,7 +11,7 @@ import PostFeed from '../../components/PostFeed'
 import { firestore, postToJSON, fromMillis } from '../../lib/firebase'
 
 //Max posts to query per page
-const LIMIT = 1
+const LIMIT = 5
 
 
 export async function getServerSideProps(context){
@@ -59,10 +59,13 @@ export default function Home(props) {
   };
 
   return (
-    <div>
+    <div >
       <PostFeed posts={posts} />
+      <div className='centered'>
       {!loading && !postsEnd && <button onClick={getMorePosts}>Load more</button>}
 
+      </div>
+      
       <Loader  show={loading}/>
 
       {postsEnd && 'You have reached the end!'}

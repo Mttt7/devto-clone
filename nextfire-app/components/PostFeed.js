@@ -3,8 +3,11 @@ import Link from "next/link"
 
 
 export default function PostFeed({posts,admin }) {
-  return posts ? posts.map( (post) => <PostItem post={post} key={post.slug} admin={admin} /> ) : null
+  return(
+  <div className="post-feed">
+  {posts ? posts.map( (post) => <PostItem post={post} key={post.slug} admin={admin} /> ) : null}
 
+  </div>)
 
 }
 

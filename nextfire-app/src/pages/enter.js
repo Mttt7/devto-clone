@@ -7,7 +7,7 @@ import debounce from "lodash.debounce";
 export default function Enter(props) {
   const {user, username} = useContext(UserContext);
 
-  //1. user signed ou <SignInButton />
+  //1. user sidgned ou <SignInButton />
   //2. user signed in but missing username <UsernameForm />
   //3. user signed in, has username <SignOutButtton />
 

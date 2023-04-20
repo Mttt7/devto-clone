@@ -169,6 +169,7 @@ button.btn-logo {
 /* Cards */
 
 .card {
+  width: 80%;
   padding: 2rem;
   margin: 1rem 0;
   background-color: white;
@@ -258,5 +259,31 @@ input[type="file"] {
   align-content: center;
   text-align: center;
 }
+.post-feed{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centered{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .hidden { display:  none; }
+
+@media (max-width: 700px) {
+  button.btn-logo{
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
+  }
+img.profile-photo{
+  height: 30px;
+  width: 30px;
+}
+.card{
+  width: 100%;
+}
+}
