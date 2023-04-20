@@ -131,7 +131,7 @@ export async function getServerSideProps({query}){
 }
 ```
 
-# ISR Incremental Static Generation
+# ISR Incremental Static Regeneration
 The page /username/slug is statically generated, but regenerated after new requests come in at an  interval of 5000ms. If a prerendered page does not exist, will fallback to regular SSR.
 
 ```javascript
