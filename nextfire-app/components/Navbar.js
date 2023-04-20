@@ -8,7 +8,7 @@ export default function Navbar() {
 
     const signOut =  () => {
       auth.signOut();
-      //router.reload();
+     
     }
     return (
         <nav className="navbar">
