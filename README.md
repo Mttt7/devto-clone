@@ -1,3 +1,18 @@
+# Installation:
+. . .
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Details about project
 
 # Rules in Firebase to ensure safety of data:
